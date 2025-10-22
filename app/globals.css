@@ -1,0 +1,46 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0A0A0A;
+  --fg: #FFFFFF;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.container-xl {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.h1 {
+  @apply text-3xl sm:text-5xl font-bold tracking-tight;
+}
+
+.h2 {
+  @apply text-2xl sm:text-4xl font-semibold;
+}
+
+.p-lg {
+  @apply text-base sm:text-lg text-gray-200;
+}
+
+.card {
+  @apply bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow;
+}
+
+.btn {
+  @apply inline-block rounded-xl px-5 py-3 font-medium border border-primary;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:opacity-90;
+}
+
+.link {
+  @apply text-primary hover:underline;
+}
