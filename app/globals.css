@@ -1,11 +1,13 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --bg: #0A0A0A;
-  --fg: #FFFFFF;
+  --bg: #F6F3EE;
+  --fg: #201A17;
+  --fg-muted: #6B5F56;
+  --primary: #7A1E1E;
+  --accent: #B68A67;
 }
 
 html, body {
@@ -13,34 +15,107 @@ html, body {
   color: var(--fg);
 }
 
+body {
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  @apply antialiased;
+}
+
 .container-xl {
   @apply max-w-6xl mx-auto px-4;
 }
 
-.h1 {
-  @apply text-3xl sm:text-5xl font-bold tracking-tight;
+.heading-xl {
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  @apply text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight;
 }
 
-.h2 {
-  @apply text-2xl sm:text-4xl font-semibold;
+.heading-lg {
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  @apply text-3xl sm:text-4xl font-semibold leading-tight;
 }
 
-.p-lg {
-  @apply text-base sm:text-lg text-gray-200;
+.heading-md {
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  @apply text-2xl sm:text-3xl font-semibold leading-tight;
+}
+
+.copy-xl {
+  @apply text-lg sm:text-xl text-muted;
+}
+
+.copy-lg {
+  @apply text-base sm:text-lg text-muted;
+}
+
+.eyebrow {
+  @apply uppercase tracking-[0.3em] text-xs font-semibold text-primary;
 }
 
 .card {
-  @apply bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow;
+  @apply bg-white/80 backdrop-blur rounded-3xl border border-black/5 shadow-panel p-8 space-y-4;
+}
+
+.card-muted {
+  @apply bg-paper border border-black/5 rounded-3xl p-8 space-y-4;
+}
+
+.pillar-card {
+  @apply bg-white/60 border border-black/10 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition-transform duration-300 ease-out;
 }
 
 .btn {
-  @apply inline-block rounded-xl px-5 py-3 font-medium border border-primary;
+  @apply inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-300;
 }
 
 .btn-primary {
-  @apply bg-primary text-white hover:opacity-90;
+  @apply bg-primary text-white hover:bg-primary/90;
+}
+
+.btn-secondary {
+  @apply border border-primary text-primary hover:bg-primary hover:text-white;
 }
 
 .link {
-  @apply text-primary hover:underline;
+  @apply text-primary hover:text-primary/70 underline-offset-4 hover:underline;
+}
+
+.hero-sheen {
+  background: radial-gradient(circle at top left, rgba(182, 138, 103, 0.28), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(122, 30, 30, 0.25), transparent 55%);
+}
+
+.prose-custom {
+  @apply space-y-6 text-base leading-relaxed text-muted;
+}
+
+.prose-custom h2,
+.prose-custom h3,
+.prose-custom h4 {
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  @apply text-ink font-semibold;
+}
+
+.prose-custom h2 {
+  @apply text-3xl;
+}
+
+.prose-custom h3 {
+  @apply text-2xl;
+}
+
+.prose-custom p {
+  @apply text-muted leading-relaxed;
+}
+
+.prose-custom ul,
+.prose-custom ol {
+  @apply list-disc pl-6 space-y-2;
+}
+
+.prose-custom blockquote {
+  @apply border-l-4 border-primary/40 pl-4 italic text-muted;
+}
+
+.prose-custom a {
+  @apply text-primary underline-offset-4 hover:underline;
 }
