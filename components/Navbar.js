@@ -11,6 +11,7 @@ export function Navbar() {
         <button className="sm:hidden border border-zinc-700 rounded-md px-3 py-1" onClick={()=>setOpen(!open)}>Menu</button>
         <nav className={`sm:flex gap-6 ${open ? 'block mt-3' : 'hidden sm:flex'}`}>
           <Link className="hover:text-primary" href="/about">About</Link>
+          <Link className="hover:text-primary" href="/company">Company</Link>
           <Link className="hover:text-primary" href="/services">Services</Link>
           <Link className="hover:text-primary" href="/insights">Insights</Link>
           <Link className="hover:text-primary" href="/contact">Contact</Link>
