@@ -10,9 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-[var(--bg)] text-[var(--fg)] min-h-screen flex flex-col">
         <Navbar />
-        <main className="container-xl py-10">{children}</main>
+        <main className="container-xl py-10 flex-1 w-full">{children}</main>
         <Footer />
       </body>
     </html>
