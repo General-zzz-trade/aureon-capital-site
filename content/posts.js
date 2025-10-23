@@ -13,6 +13,17 @@ We examine BTC liquidity across major Asian venues, focusing on depth-of-book, f
 - Structural leverage has moderated, reducing the frequency of liquidation cascades.
 - Asia-led trading hours show rising influence on intraday volatility regimes.
 
+### Market Diagnostics
+Coinbase International, OKX, and Binance dominate resting depth, yet we observe steady share gains from Japanese-regulated venues as local compliance reforms draw institutional order flow. Historical intraday slippage series show average price impact falling 22% year-over-year on $5 million notional blocks, reflecting narrower spreads and better auto-hedging.
+
+### Structural Drivers to Monitor
+1. **Cross-Border Flow Windows** — Hong Kong and Singapore continue to anchor the open for Asia hours. A widening gap between offshore CNH funding costs and USD rates has started to influence perpetual swap basis and should remain a key signal for capital migration.
+2. **Derivatives Mix** — Options volume is up 35% quarter-on-quarter with a tilt toward short-dated calls. Dealers are dynamically hedging via perpetual swaps, reinforcing liquidity in the front two contracts but leaving tails exposed when realized volatility jumps.
+3. **Custody and Prime Expansion** — Regional primes are adding synthetic USD financing, unlocking leverage for systematic funds that historically funded via U.S. brokers.
+
+### Implementation Thoughts
+Portfolio leads should revisit venue whitelists, ensure smart-order routers incorporate venue-specific maker rebates, and recalibrate liquidation triggers to account for deeper but more fragmented liquidity pools.
+
 > This article is for educational and analytical purposes only and does not constitute investment advice.
     `
   },
@@ -29,6 +40,17 @@ The integration of AI with systematic execution creates tighter feedback loops b
 - Faster discovery of microstructure edges.
 - Increased need for risk normalization across venues and instruments.
 - Governance standards become a competitive moat.
+
+### Architecture Shifts
+Execution stacks are adopting reinforcement learning agents that can interpret exchange health metrics, latency spikes, and fee microstructure in real time. This drives adaptive order slicing that adjusts participation rates every few milliseconds while respecting venue-specific toxicity thresholds.
+
+### Data Stewardship
+As proprietary and alternative datasets expand, firms are formalizing feature-governance councils to document lineage, consent, and model explainability. This reduces regulatory friction when scaling models to new jurisdictions and makes third-party audits more efficient.
+
+### Strategic Questions for Leadership
+1. **Build vs. Partner** — Evaluate whether to own the entire data and model pipeline or leverage specialist vendors for embeddings, inference optimization, and monitoring.
+2. **Talent Architecture** — Combine quants, ML engineers, and market-microstructure specialists into domain pods that can iterate from hypothesis to deployment without cross-department bottlenecks.
+3. **Capital Allocation** — Balance spend between core execution infrastructure and exploratory models targeting emerging asset classes.
 
 *Educational use only; not investment advice.*
     `
@@ -76,6 +98,11 @@ Artificial Intelligence could unleash powerful disinflationary effects through p
 
 The outcome depends on whether productivity gains arrive fast enough to offset these pressures. Betting that AI alone will neutralize all structural inflation risks is, in Bridgewater’s words, “a speculative wager with poor risk-reward.”
 
+### Inflation Scenarios to Underwrite
+- **Persistent 3–4% Core Inflation:** Wage growth and fiscal deficits sustain above-target inflation, requiring higher term premia and frequent policy recalibration.
+- **Volatile Inflation Bands:** Energy and geopolitical shocks cause inflation to oscillate widely, demanding portfolios that can absorb sharp duration and commodity swings.
+- **Productivity-Led Relief (Low Probability Near Term):** Rapid diffusion of AI productivity offsets demand pressures, but requires major capex absorption and policy coordination.
+
 ### Portfolio Implications: Traditional Models Are Vulnerable
 The post-COVID inflation shock shattered a long-held belief: that stocks and bonds reliably hedge each other. Rising inflation flipped their correlation positive, causing simultaneous drawdowns and exposing the fragility of traditional 70/30 portfolios.
 
@@ -88,6 +115,11 @@ Bridgewater’s analysis suggests investors should rethink portfolio constructio
 - Diversify beyond U.S. equities and Treasuries.
 - Incorporate inflation-resilient assets such as commodities, real assets, and inflation-linked bonds.
 - Recognize that inflation protection is currently cheap relative to the risk of sustained inflation shocks.
+
+### Governance and Monitoring Playbook
+1. **Rebalance Cadence** — Increase the frequency of risk budgeting reviews to capture rapidly shifting correlations.
+2. **Scenario Labs** — Build cross-functional war-gaming sessions that stress liquidity, counterparty resilience, and collateral terms under renewed inflation surges.
+3. **Policy Watchlists** — Track fiscal announcements, energy policy, and geopolitics with a dedicated macro dashboard that flags inflection points early.
 
 ### Bottom Line
 We are not entering a “new inflation” era so much as returning to a historical norm — one where inflation risks are ever-present and macro volatility higher. The deflationary calm of the 2010s was an anomaly.
