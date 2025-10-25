@@ -19,6 +19,12 @@ export const posts = [
         <li>Structural leverage has moderated, reducing the frequency of liquidation cascades during overnight trading windows.</li>
         <li>Asia-led trading hours show rising influence on intraday volatility regimes as Western participation consolidates.</li>
       </ul>
+      <h3>Market Depth Signals</h3>
+      <p>
+        Depth-of-book metrics across BTC perpetual pairs now sit 18% above their twelve-month trailing average when measured at ±1% from
+        mid, indicating a broader network of resting liquidity. Regional market makers continue to recycle inventory between Hong Kong,
+        Singapore, and Seoul exchanges to maintain orderly spreads.
+      </p>
       <blockquote>
         <p>This analysis is for educational purposes only and does not constitute investment advice.</p>
       </blockquote>
@@ -56,6 +62,33 @@ export const posts = [
     `,
   },
   {
+    slug: "stablecoin-liquidity-reserves-quarterly-survey",
+    title: "Quarterly Survey of Stablecoin Liquidity and Reserve Compositions",
+    date: "2025-10-05",
+    readTime: "7 min read",
+    category: "Treasury & Risk",
+    excerpt:
+      "Comparing reserve mix, redemption mechanics, and secondary market liquidity across the largest fiat-referenced stablecoins.",
+    content: `
+      <h2>Reserve Quality Trends</h2>
+      <p>
+        Disclosure cadence improved this quarter as issuers adopted shorter reporting lags and richer breakdowns of collateral buckets.
+        We benchmark the duration, credit mix, and liquidity coverage ratios of the top five USD-referenced stablecoins against Aureon's
+        treasury risk framework.
+      </p>
+      <h3>Highlights</h3>
+      <ul>
+        <li>T-bill allocations continue to climb, with the weighted average maturity shortening to 43 days.</li>
+        <li>Intraday redemption windows expanded across three issuers, reducing operational frictions for OTC desks.</li>
+        <li>On-chain liquidity remains deepest on Ethereum, but Solana venues posted the largest quarter-over-quarter growth.</li>
+      </ul>
+      <p>
+        Our comparative dashboard enables treasury leads to stress test redemption assumptions and align settlement workflows with reserve
+        composition realities.
+      </p>
+    `,
+  },
+  {
     slug: "emerging-policy-signals-for-digital-asset-adoption",
     title: "Emerging Policy Signals for Digital Asset Adoption",
     date: "2025-09-30",
@@ -77,6 +110,32 @@ export const posts = [
       <p>
         Aureon Capital monitors regulatory developments across a dozen jurisdictions, translating them into practical implications
         for operating models, product design, and risk management.
+      </p>
+    `,
+  },
+  {
+    slug: "institutional-defi-credit-desk-playbook",
+    title: "Building Institutional Credit Desks on DeFi Infrastructure",
+    date: "2025-09-18",
+    readTime: "9 min read",
+    category: "Execution",
+    excerpt:
+      "Operating blueprint for institutions structuring secured lending, risk governance, and liquidity buffers across DeFi credit markets.",
+    content: `
+      <h2>Design Principles</h2>
+      <p>
+        Institutional credit desks require stringent collateral frameworks, counterparty screening, and on-chain monitoring to manage
+        protocol-specific and market-wide risk.
+      </p>
+      <h3>Operating Model Components</h3>
+      <ul>
+        <li>Establish segregation of duties between origination, risk, and operations with on-chain observability tooling.</li>
+        <li>Integrate oracle diversity and circuit breakers to mitigate price manipulation and oracle drift.</li>
+        <li>Construct liquidity buffers across stablecoin and liquid staking asset pairs to fund margin calls.</li>
+      </ul>
+      <p>
+        Aureon Capital's methodology coordinates protocol due diligence, legal structuring, and post-trade controls to translate DeFi
+        yield strategies into institutional-grade credit platforms.
       </p>
     `,
   },
@@ -103,6 +162,31 @@ export const posts = [
       <p>
         Aureon Capital supports managers with vendor evaluation, workflow blueprinting, and readiness assessments aligned to
         jurisdictional obligations.
+      </p>
+    `,
+  },
+  {
+    slug: "cross-border-settlement-interoperability-update",
+    title: "Interoperability Update on Cross-Border Digital Asset Settlement",
+    date: "2025-08-31",
+    readTime: "6 min read",
+    category: "Infrastructure",
+    excerpt:
+      "Evaluating pilots that link wholesale CBDC sandboxes with private settlement networks to streamline cross-border flows.",
+    content: `
+      <h2>Programme Landscape</h2>
+      <p>
+        Wholesale CBDC experiments are increasingly interfacing with private settlement chains to achieve delivery-versus-payment without
+        relying on correspondent banking rails.
+      </p>
+      <h3>What We Are Tracking</h3>
+      <ul>
+        <li>Multi-CBDC corridors such as mBridge moving from proof-of-concept to limited production with trade finance partners.</li>
+        <li>Interoperability layers that translate messaging standards (ISO 20022, SWIFT) into atomic settlement instructions.</li>
+        <li>Compliance frameworks that synchronise KYC, AML, and sanctions screening across jurisdictional nodes.</li>
+      </ul>
+      <p>
+        The Aureon settlement readiness index scores participating financial institutions on connectivity, reporting maturity, and resilience.
       </p>
     `,
   },
