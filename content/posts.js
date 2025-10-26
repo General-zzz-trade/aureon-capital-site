@@ -3,34 +3,217 @@ export const posts = [
     slug: "bitcoin-liquidity-transition-asia-q4-2025",
     title: "The Liquidity Transition of Bitcoin in Asia — Q4 2025 Outlook",
     date: "2025-10-20",
-    excerpt: "Assessing exchange depth, basis spreads, and regional market structure as Asia re-prices liquidity and leverage.",
+    readTime: "6 min read",
+    category: "Market Structure",
+    excerpt:
+      "Assessing exchange depth, basis spreads, and regional market structure as Asia re-prices liquidity and leverage.",
     content: `
-### Overview
-We examine BTC liquidity across major Asian venues, focusing on depth-of-book, funding rates, and basis dynamics.
-
-### Key Takeaways
-- Liquidity concentration remains high on a few venues, but capital efficiency is improving.
-- Structural leverage has moderated, reducing the frequency of liquidation cascades.
-- Asia-led trading hours show rising influence on intraday volatility regimes.
-
-> This article is for educational and analytical purposes only and does not constitute investment advice.
-    `
+      <h2>Overview</h2>
+      <p>
+        BTC market depth across major Asian venues has normalised after the 2024 deleveraging cycle. We examine shifts in capital
+        efficiency, the redistribution of liquidity, and the role of institutional market makers in stabilising spreads.
+      </p>
+      <h3>Key Takeaways</h3>
+      <ul>
+        <li>Liquidity concentration remains high on a few venues, but capital efficiency is improving through cross-margin frameworks.</li>
+        <li>Structural leverage has moderated, reducing the frequency of liquidation cascades during overnight trading windows.</li>
+        <li>Asia-led trading hours show rising influence on intraday volatility regimes as Western participation consolidates.</li>
+      </ul>
+      <h3>Market Depth Signals</h3>
+      <p>
+        Depth-of-book metrics across BTC perpetual pairs now sit 18% above their twelve-month trailing average when measured at ±1% from
+        mid, indicating a broader network of resting liquidity. Regional market makers continue to recycle inventory between Hong Kong,
+        Singapore, and Seoul exchanges to maintain orderly spreads.
+      </p>
+      <blockquote>
+        <p>This analysis is for educational purposes only and does not constitute investment advice.</p>
+      </blockquote>
+      <p>
+        We continue to monitor funding spreads and cross-venue basis to quantify where liquidity providers are willing to warehouse
+        risk and where pricing dislocations may emerge.
+      </p>
+    `,
   },
   {
     slug: "ai-and-digital-assets-new-market-architecture",
     title: "AI, Data, and the New Architecture of Financial Markets",
     date: "2025-10-18",
+    readTime: "5 min read",
+    category: "Innovation",
     excerpt: "How model-driven signals and automation are reshaping pricing, execution, and risk in digital asset markets.",
     content: `
-### Signals to Systems
-The integration of AI with systematic execution creates tighter feedback loops between research and trading.
-
-### Implications
-- Faster discovery of microstructure edges.
-- Increased need for risk normalization across venues and instruments.
-- Governance standards become a competitive moat.
-
-*Educational use only; not investment advice.*
-    `
-  }
+      <h2>Signals to Systems</h2>
+      <p>
+        The integration of AI with systematic execution creates tighter feedback loops between research, decisioning, and trading.
+        Institutions are redesigning research pipelines to capture differentiated data, apply adaptive models, and distribute
+        insights into execution desks in near real-time.
+      </p>
+      <h3>Implications</h3>
+      <ul>
+        <li>Faster discovery of microstructure edges drives demand for governance around model deployment.</li>
+        <li>Risk normalisation must account for automation across venues, assets, and counterparties.</li>
+        <li>Data lineage and validation become competitive moats as regulatory standards evolve.</li>
+      </ul>
+      <p>
+        Our advisory work focuses on aligning data, model oversight, and execution practices so that institutions can scale AI
+        responsibly across market functions.
+      </p>
+      <p><em>Educational use only; not investment advice.</em></p>
+    `,
+  },
+  {
+    slug: "stablecoin-liquidity-reserves-quarterly-survey",
+    title: "Quarterly Survey of Stablecoin Liquidity and Reserve Compositions",
+    date: "2025-10-05",
+    readTime: "7 min read",
+    category: "Treasury & Risk",
+    excerpt:
+      "Comparing reserve mix, redemption mechanics, and secondary market liquidity across the largest fiat-referenced stablecoins.",
+    content: `
+      <h2>Reserve Quality Trends</h2>
+      <p>
+        Disclosure cadence improved this quarter as issuers adopted shorter reporting lags and richer breakdowns of collateral buckets.
+        We benchmark the duration, credit mix, and liquidity coverage ratios of the top five USD-referenced stablecoins against Aureon's
+        treasury risk framework.
+      </p>
+      <h3>Highlights</h3>
+      <ul>
+        <li>T-bill allocations continue to climb, with the weighted average maturity shortening to 43 days.</li>
+        <li>Intraday redemption windows expanded across three issuers, reducing operational frictions for OTC desks.</li>
+        <li>On-chain liquidity remains deepest on Ethereum, but Solana venues posted the largest quarter-over-quarter growth.</li>
+      </ul>
+      <p>
+        Our comparative dashboard enables treasury leads to stress test redemption assumptions and align settlement workflows with reserve
+        composition realities.
+      </p>
+    `,
+  },
+  {
+    slug: "emerging-policy-signals-for-digital-asset-adoption",
+    title: "Emerging Policy Signals for Digital Asset Adoption",
+    date: "2025-09-30",
+    readTime: "7 min read",
+    category: "Policy & Governance",
+    excerpt: "Interpreting regulatory developments that are accelerating institutional adoption across key jurisdictions.",
+    content: `
+      <h2>Policy Catalysts</h2>
+      <p>
+        Regulators in Hong Kong, Singapore, the UAE, and the EU are refining licensing regimes that balance innovation with
+        investor protection. These policy signals are creating clearer pathways for institutions to scale digital asset offerings.
+      </p>
+      <h3>What to Watch</h3>
+      <ul>
+        <li>Implementation of interoperable custody standards that enable multi-jurisdictional operating models.</li>
+        <li>Supervisory sandboxes evolving into permanent frameworks for tokenisation pilots.</li>
+        <li>Capital treatment guidance that influences the pace of balance sheet deployment.</li>
+      </ul>
+      <p>
+        Aureon Capital monitors regulatory developments across a dozen jurisdictions, translating them into practical implications
+        for operating models, product design, and risk management.
+      </p>
+    `,
+  },
+  {
+    slug: "institutional-defi-credit-desk-playbook",
+    title: "Building Institutional Credit Desks on DeFi Infrastructure",
+    date: "2025-09-18",
+    readTime: "9 min read",
+    category: "Execution",
+    excerpt:
+      "Operating blueprint for institutions structuring secured lending, risk governance, and liquidity buffers across DeFi credit markets.",
+    content: `
+      <h2>Design Principles</h2>
+      <p>
+        Institutional credit desks require stringent collateral frameworks, counterparty screening, and on-chain monitoring to manage
+        protocol-specific and market-wide risk.
+      </p>
+      <h3>Operating Model Components</h3>
+      <ul>
+        <li>Establish segregation of duties between origination, risk, and operations with on-chain observability tooling.</li>
+        <li>Integrate oracle diversity and circuit breakers to mitigate price manipulation and oracle drift.</li>
+        <li>Construct liquidity buffers across stablecoin and liquid staking asset pairs to fund margin calls.</li>
+      </ul>
+      <p>
+        Aureon Capital's methodology coordinates protocol due diligence, legal structuring, and post-trade controls to translate DeFi
+        yield strategies into institutional-grade credit platforms.
+      </p>
+    `,
+  },
+  {
+    slug: "tokenised-funds-operating-model-playbook",
+    title: "Designing Operating Models for Tokenised Fund Platforms",
+    date: "2025-09-12",
+    readTime: "8 min read",
+    category: "Execution",
+    excerpt:
+      "Key decisions for asset managers architecting custody, distribution, and governance for tokenised fund offerings.",
+    content: `
+      <h2>Operating Priorities</h2>
+      <p>
+        Tokenised funds demand interoperability across issuance, custody, and secondary liquidity. Managers must coordinate
+        technology stacks, service providers, and regulatory reporting from the outset of product design.
+      </p>
+      <h3>Implementation Checklist</h3>
+      <ul>
+        <li>Align issuance platforms with transfer agency and fund accounting requirements.</li>
+        <li>Define contingency processes for settlement finality across on-chain and off-chain environments.</li>
+        <li>Update governance charters to include digital asset risk metrics and incident response triggers.</li>
+      </ul>
+      <p>
+        Aureon Capital supports managers with vendor evaluation, workflow blueprinting, and readiness assessments aligned to
+        jurisdictional obligations.
+      </p>
+    `,
+  },
+  {
+    slug: "cross-border-settlement-interoperability-update",
+    title: "Interoperability Update on Cross-Border Digital Asset Settlement",
+    date: "2025-08-31",
+    readTime: "6 min read",
+    category: "Infrastructure",
+    excerpt:
+      "Evaluating pilots that link wholesale CBDC sandboxes with private settlement networks to streamline cross-border flows.",
+    content: `
+      <h2>Programme Landscape</h2>
+      <p>
+        Wholesale CBDC experiments are increasingly interfacing with private settlement chains to achieve delivery-versus-payment without
+        relying on correspondent banking rails.
+      </p>
+      <h3>What We Are Tracking</h3>
+      <ul>
+        <li>Multi-CBDC corridors such as mBridge moving from proof-of-concept to limited production with trade finance partners.</li>
+        <li>Interoperability layers that translate messaging standards (ISO 20022, SWIFT) into atomic settlement instructions.</li>
+        <li>Compliance frameworks that synchronise KYC, AML, and sanctions screening across jurisdictional nodes.</li>
+      </ul>
+      <p>
+        The Aureon settlement readiness index scores participating financial institutions on connectivity, reporting maturity, and resilience.
+      </p>
+    `,
+  },
+  {
+    slug: "esg-integration-for-digital-asset-treasury",
+    title: "Integrating ESG Mandates into Digital Asset Treasury Programs",
+    date: "2025-08-28",
+    readTime: "6 min read",
+    category: "Sustainability",
+    excerpt:
+      "Frameworks for aligning digital asset treasury strategies with sustainability reporting and stakeholder expectations.",
+    content: `
+      <h2>Why It Matters</h2>
+      <p>
+        Institutional treasurers are increasingly accountable for demonstrating how digital asset exposure aligns with ESG
+        commitments. This requires lifecycle transparency from energy usage to counterparty conduct.
+      </p>
+      <h3>Integration Levers</h3>
+      <ul>
+        <li>Adopt renewable-backed custody and staking providers with verifiable attestations.</li>
+        <li>Embed sustainability KPIs within treasury policy, risk appetite, and reporting dashboards.</li>
+        <li>Engage suppliers on provenance, sanctions screening, and social impact commitments.</li>
+      </ul>
+      <p>
+        We help treasury teams translate ESG goals into procurement criteria, governance updates, and performance measurement for
+        digital asset portfolios.
+      </p>
+    `,
+  },
 ];
