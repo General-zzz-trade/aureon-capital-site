@@ -33,6 +33,24 @@ and high-contrast typography.
    npm run lint
    ```
 
+## Automated Market Content Scheduler
+
+Run the scheduler alongside the app to populate real-time market data and research briefs:
+
+```bash
+npm run scheduler
+```
+
+The scheduler executes the following timeline (Hong Kong Time):
+
+- Every 10 minutes — Real-Time Market Overview (BTC, ETH, NASDAQ, Gold)
+- 09:00 daily — Aureon Capital Daily Market Brief (English & Chinese)
+- 10:00 daily — Global Market News Summary (English & Chinese)
+- 17:00 daily — Daily Market Summary Report (English & Chinese)
+- 20:00 every Sunday — Weekly Market Review (English & Chinese)
+
+Each cycle validates upstream data feeds (CoinGecko, Yahoo Finance, Bloomberg, Yahoo Finance RSS, CoinDesk RSS). If a source is unavailable the run is skipped, the issue is logged to `logs/scheduler.log`, and the previously published content remains visible on the site.
+
 ## Project Structure
 ```
 app/            # App Router pages and layouts

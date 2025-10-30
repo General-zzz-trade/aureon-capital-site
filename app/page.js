@@ -1,5 +1,10 @@
 import Link from "next/link";
 import { posts } from "../content/posts";
+import MarketOverview from "../components/MarketOverview";
+import DailyBrief from "../components/DailyBrief";
+import GlobalNews from "../components/GlobalNews";
+import DailySummary from "../components/DailySummary";
+import WeeklyReview from "../components/WeeklyReview";
 
 const featuredPosts = posts.slice(0, 3);
 
@@ -110,6 +115,10 @@ export default function Page() {
         </div>
       </section>
 
+      <MarketOverview />
+      <DailyBrief />
+      <GlobalNews />
+
       <section className="container-xl space-y-12">
         <div className="max-w-3xl space-y-4">
           <p className="eyebrow">Disciplined Perspective</p>
@@ -128,6 +137,9 @@ export default function Page() {
           ))}
         </div>
       </section>
+
+      <DailySummary />
+      <WeeklyReview />
 
       <section className="container-xl grid gap-12 lg:grid-cols-[1fr,1.1fr] items-center">
         <div className="space-y-6">
