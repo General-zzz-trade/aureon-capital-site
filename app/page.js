@@ -1,4 +1,11 @@
 import Link from "next/link";
+import { MarketOverviewSection } from "@/components/sections/MarketOverviewSection";
+import { DailyBriefSection } from "@/components/sections/DailyBriefSection";
+import { GlobalMarketNewsSection } from "@/components/sections/GlobalMarketNewsSection";
+import { DailyReportSection } from "@/components/sections/DailyReportSection";
+import { WeeklyReviewSection } from "@/components/sections/WeeklyReviewSection";
+
+export const dynamic = "force-dynamic";
 
 export default function Page() {
   return (
@@ -31,6 +38,12 @@ export default function Page() {
       <section className="text-center">
         <p className="text-gray-300 italic">Transforming data into strategy — empowering decisions in a volatile world.</p>
       </section>
+
+      <MarketOverviewSection />
+      <DailyBriefSection />
+      <GlobalMarketNewsSection />
+      <DailyReportSection />
+      <WeeklyReviewSection />
     </div>
   );
 }
