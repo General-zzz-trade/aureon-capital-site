@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { MarketOverview } from "../components/sections/MarketOverview";
+import { DailyBrief } from "../components/sections/DailyBrief";
+import { GlobalNews } from "../components/sections/GlobalNews";
+import { DailyReport } from "../components/sections/DailyReport";
+import { WeeklyReview } from "../components/sections/WeeklyReview";
 
 export default function Page() {
   return (
@@ -28,9 +33,18 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="text-center">
-        <p className="text-gray-300 italic">Transforming data into strategy — empowering decisions in a volatile world.</p>
+      <section className="space-y-6">
+        <p className="text-gray-300 italic text-center">Transforming data into strategy — empowering decisions in a volatile world.</p>
+        <MarketOverview />
       </section>
+
+      <DailyBrief />
+
+      <GlobalNews />
+
+      <DailyReport />
+
+      <WeeklyReview />
     </div>
   );
 }
